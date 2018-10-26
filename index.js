@@ -1,7 +1,7 @@
 const http = require('http'),
     app = require('express')(),
     IP = require('./getIP'),
-    port = 5900;
+    port = process.env.PORT || 8080;
 
 app.enable('trust proxy');
 server = http.createServer(app);
